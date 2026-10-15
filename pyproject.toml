@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-harness"
+version = "0.1.0"
+description = "Lossless audio memory + active replay harness for long-audio reasoning"
+requires-python = ">=3.10"
+dependencies = [
+    "transformers>=4.45",
+    "librosa",
+    "soundfile",
+    "pydub",
+    "datasets",
+    "rouge-score",
+    "bert-score",
+    "numpy",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+quantize = ["autoawq"]
+
+[tool.setuptools.packages.find]
+include = ["audio_harness*"]

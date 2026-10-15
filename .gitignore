@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.memory_cache/
+
+# AUDIO-HARNESS 项目
+# 实验输出（JSONL/CSV/MD 报告）
+outputs/
+
+# 测试音频与数据集（通过 huggingface 下载，不提交）
+data/*.flac
+data/*.wav
+data/*.mp3
+data/*.m4a
+data/*.ogg
